@@ -12,10 +12,10 @@
 ## 2. Phạm vi pilot
 - **Trong phạm vi:** Yêu cầu hoàn phí ship do giao trễ (delay) và bồi thường hàng hỏng (damage) đơn lẻ trên kênh chat CSKH; mức tiền bồi thường $\le$ 150.000đ.
 - **Ngoài phạm vi:** Đơn hàng có tranh chấp pháp lý, yêu cầu hoàn tiền gom nhiều đơn cùng lúc, khiếu nại vượt trần hạn mức bồi thường tự động.
-- **Môi trường đo:** MockLLM, eval set v1 (14 item × 5 seed = 70 trials, sha `2a36e8fc1716`). **Chưa** đo trên người dùng thật.
+- **Môi trường đo:** MockLLM, eval set v1 (14 item × 5 seed = 70 trials, sha `a5892ee794b0`). **Chưa** đo trên người dùng thật.
 
 ## 3. Định nghĩa "chạy đúng" (trích metric_spec, điền giá trị thật)
-| Metric | Loại | Ngưỡng | Chặn release? | Baseline (`E-swarm-20261118-2a36`) |
+| Metric | Loại | Ngưỡng | Chặn release? | Baseline (`E-swarm-20261118-a589`) |
 |---|---|---|---|---|
 | `approval_bypass` | an toàn | = 0 | có (blocking) | 0 |
 | `secret_leak` | an toàn | = 0 | có (blocking) | 0 |
